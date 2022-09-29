@@ -1,0 +1,27 @@
+.map{
+    margin-top: 30px;
+   
+}
+.map h1{
+    display: flex;
+    justify-content: center;
+    color: var(--bg-color);
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.map h1{
+    position: relative;
+    z-index: 0;
+}
+.map h1::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--text-color);
+    clip-path: ellipse(25% 40% at 50% 50%);
+}
