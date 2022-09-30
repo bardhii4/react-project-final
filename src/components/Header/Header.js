@@ -1,11 +1,9 @@
 import { useState } from "react";
-import {Link} from 'react-router-dom';
 import "./Header.css"
 
 function Header() {
 
     const [value,setValue] = useState('none')
-
  
     const searchButtonHandler = () => {
         setValue('block')
@@ -20,7 +18,7 @@ function Header() {
     window.addEventListener('scroll' , () => {
         header.classList.toggle('shadow', window.scrollY > 0);
     });
-
+    
     
 
     return (
@@ -35,15 +33,7 @@ function Header() {
             <li><a  href="#parts"></a>Parts</li>
             <li><a  href="#blog"></a>Our Blog</li>
         </ul>
-        <div className="wrapper">
-            <div className="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <i className='bx bx-search' id="search-icon"></i>
-        </div>
-
+        <i className='bx bx-search' id="search-icon" onClick={searchButtonHandler}></i>
         <div className="search-box container" style={{display: value}}>
             <input typeof="search" name="" id="" placeholder="Search heree"></input>
         </div>

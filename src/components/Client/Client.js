@@ -1,5 +1,10 @@
 import "./Client.css"
 import clientImg from '../../images/client.jpg';
+import womanImg from '../../images/woman-1.jpg';
+import woman2Img from '../../images/woman-2.jpg';
+import woman3Img from '../../images/woman-3.jpg';
+import { Link } from "react-router-dom";
+
 
 
 function Client() {
@@ -22,10 +27,10 @@ function Client() {
             </div>
             </div>
             <div className="box">
-            <img src={clientImg} alt="clientImg"></img>
+            <img src={womanImg} alt="womanImg"></img>
             <div className="content">
               <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
-              <h3>John Devo</h3>
+              <h3>Margaret Smyth</h3>
               <div className="star">
               <i class='bx bxs-star'></i>
               <i class='bx bxs-star'></i>
@@ -50,10 +55,10 @@ function Client() {
             </div>
             </div>
             <div className="box">
-            <img src={clientImg} alt="clientImg"></img>
+            <img src={woman2Img} alt="woman2Img"></img>
             <div className="content">
               <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
-              <h3>John Devo</h3>
+              <h3>Margaret Smyth</h3>
               <div className="star">
               <i class='bx bxs-star'></i>
               <i class='bx bxs-star'></i>
@@ -78,10 +83,10 @@ function Client() {
             </div>
             </div>
             <div className="box">
-            <img src={clientImg} alt="clientImg"></img>
+            <img src={woman3Img} alt="woman3Img"></img>
             <div className="content">
               <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
-              <h3>John Devo</h3>
+              <h3>Margaret Smyth</h3>
               <div className="star">
               <i class='bx bxs-star'></i>
               <i class='bx bxs-star'></i>
@@ -92,6 +97,13 @@ function Client() {
             </div>
             </div>
       </div>
+              <div className="click-btn">
+              <button>
+              <Link to={"/contact"}>
+              Contact Us
+              </Link>
+            </button>
+            </div>
     </section>
     );
   }
